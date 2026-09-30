@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>FitBuddy</h1>
+
+    <p>Your Personal Wellness Assistant</p>
+
+    <form action="/generate" method="post">
+
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Age</label>
+        <input type="number" name="age" required>
+
+        <label>Your Goal</label>
+        <select name="goal">
+
+            <option value="General Fitness">
+                General Fitness
+            </option>
+
+            <option value="Improve Strength">
+                Improve Strength
+            </option>
+
+            <option value="Improve Flexibility">
+                Improve Flexibility
+            </option>
+
+            <option value="Stay Active">
+                Stay Active
+            </option>
+
+        </select>
+
+        <button type="submit">
+            Generate Plan
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
